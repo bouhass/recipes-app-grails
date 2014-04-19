@@ -1,8 +1,10 @@
 package recipes
 
-class Ingredient {
+class Source {
 
     String name
+
+    static hasMany = [recipes: Recipe]
 
     static constraints = {
         name unique:true
